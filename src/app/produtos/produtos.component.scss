@@ -1,0 +1,123 @@
+/* CSS Cabeçalho */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  background: #BBBBBB;
+  padding: 20px 0;
+}
+
+.caixa{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  right: 0px;
+  top: 110px;
+
+  li{
+    display: inline;
+    margin: 0 0 0 15px;
+  }
+
+  a{
+    text-transform: uppercase;
+    color:#000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+  }
+}
+
+nav a:hover{
+  color:rgb(221, 221, 52);
+  text-decoration: underline;
+}
+
+/* CSS Rodapé */
+
+footer{
+  text-align: center;
+  background: url(/assets/bg.jpg);
+  padding: 40px 0;
+}
+
+.copy {
+  color: white;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+/* CSS Produtos */
+
+.produtos{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10%;
+
+    .produto-preco{
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px 0 0;
+    }
+    .produto-descricao{
+      font-size: 18px;
+    }
+  }
+
+  h2{
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+.produtos li:hover{
+  border-color:rgb(221, 221, 52);
+}
+.produtos li:active{
+  border-color:rgb(52, 221, 80);
+}
+
+.produtos li:hover h2{
+  font-size: 34px;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 480px) {
+  .caixa, .produtos, .produto .produto-descricao,.produto .produto-preco, .produtos li{
+    width: auto;
+    margin: 10px 10px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    position: static;
+  }
+
+  .lista-beneficios, .imagem-beneficios{
+    width: 100%;
+  }
+
+}
